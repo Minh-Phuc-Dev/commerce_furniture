@@ -34,3 +34,14 @@ jobs:
           echo "${{ secrets.BE_ENV_FILE }}" >> /opt/furniture/Node/.env
           cd /opt/furniture/Node
           npm install
+  start-chroma
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create Chroma directory and install dependencies
+        run: |
+          mkdir -p /opt/furniture/Chroma
+          cp ./ /opt/furniture/Chroma
+          python3 -m venv venv
+          source ./venv/bin/activate
+          pip install -r requirements.txt
