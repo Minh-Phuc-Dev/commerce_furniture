@@ -34,7 +34,7 @@ jobs:
           echo "${{ secrets.BE_ENV_FILE }}" >> /opt/furniture/Node/.env
           cd /opt/furniture/Node
           npm install
-  start-chroma
+  start-chroma:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
