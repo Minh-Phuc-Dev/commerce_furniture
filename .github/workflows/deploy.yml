@@ -18,8 +18,8 @@ jobs:
       - name: Copy source to /opt
         run: |
           rm -rf /opt/furniture/React
-          mkdir -p /opt/furniture/React
           cp -r ./React /opt/furniture/React
+          echo "${{ secrets.FE_ENV_FILE }}" >> /opt/furniture/Node/.env
   node-deploy:
     runs-on: self-hosted
     steps:
@@ -27,5 +27,6 @@ jobs:
       - name: Copy source to /opt
         run: |
           rm -rf /opt/furniture/Node
-          mkdir -p /opt/furniture/Node
-          cp -r ./Node /opt/furniture/Node
+          cp -r ./Node /opt/furniture
+          echo "${{ secrets.BE_ENV_FILE }}" >> /opt/furniture/Node/.env
+
