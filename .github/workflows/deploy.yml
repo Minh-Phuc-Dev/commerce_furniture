@@ -34,4 +34,3 @@ jobs:
           echo "${{ secrets.BE_ENV_FILE }}" >> /opt/furniture/Node/.env
           cd /opt/furniture/Node
           npm install
-          npm run build
