@@ -41,7 +41,7 @@ jobs:
       - name: Create Chroma directory and install dependencies
         run: |
           mkdir -p /opt/furniture/Chroma
-          cp -r ./Chroma /opt/furniture/Chroma
+          cp -r ./Chroma /opt/furniture
           cd /opt/furniture/Chroma
           python3 -m venv venv
           source ./venv/bin/activate
