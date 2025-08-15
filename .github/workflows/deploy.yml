@@ -15,18 +15,23 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
-      - name: Copy source to /opt
+      - name: Copy source, install dependencies, and build
         run: |
           rm -rf /opt/furniture/React
           cp -r ./React /opt/furniture/React
-          echo "${{ secrets.FE_ENV_FILE }}" >> /opt/furniture/Node/.env
+          echo "${{ secrets.FE_ENV_FILE }}" >> /opt/furniture/React/.env
+          cd /opt/furniture/React
+          npm install
+          npm run build
   node-deploy:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
-      - name: Copy source to /opt
+      - name: Copy source, install dependencies
         run: |
           rm -rf /opt/furniture/Node
           cp -r ./Node /opt/furniture
           echo "${{ secrets.BE_ENV_FILE }}" >> /opt/furniture/Node/.env
-
+          cd /opt/furniture/Node
+          npm install
+          npm run build
