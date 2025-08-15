@@ -1,0 +1,2 @@
+INSERT INTO public.users (id, email, password, role, display_name, attributes, meta, created_at, updated_at) VALUES (1, 'admin@gmail.com', '12345678', 'ADMIN', 'Admin', '{}', '{}', '2025-06-13 11:21:31.794000', '2025-06-13 11:21:31.794000');
+INSERT INTO public.users (id, email, password, role, display_name, attributes, meta, created_at, updated_at) VALUES (2, 'khachhang@gmail.com', '12345678', 'USER', 'Khách Hàng', '{}', '{}', '2025-06-13 11:22:44.557000', '2025-06-13 11:22:44.557000');

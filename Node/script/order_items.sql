@@ -1,0 +1,2 @@
+INSERT INTO public.order_items (id, order_id, product_id, quantity, price, attributes, meta, created_at, updated_at) VALUES (1, 1, 1, 1, 4999000.00, null, null, '2025-07-06 18:19:59.061000', '2025-07-06 18:19:59.061000');
+INSERT INTO public.order_items (id, order_id, product_id, quantity, price, attributes, meta, created_at, updated_at) VALUES (2, 2, 20, 1, 1800000.00, null, null, '2025-07-10 11:05:19.947000', '2025-07-10 11:05:19.947000');

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+*::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #606060;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #909090;
+}
+
+.dark *::-webkit-scrollbar-thumb {
+    background: #aaaaaa;
+}
+
+.dark *::-webkit-scrollbar-thumb:hover {
+    background: #717171;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollbar-sm::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+.scrollbar-xs::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif
+}
+
+.rc-pagination-prev,
+.rc-pagination-item,
+.rc-pagination-next {
+    @apply h-7 min-w-7 p-0.5 inline-flex items-center justify-center transition-all;
+    @apply rounded text-gray-700 cursor-pointer;
+    @apply aria-disabled:cursor-not-allowed aria-disabled:text-gray-500 hover:border;
+    @apply text-zinc-200;
+}
+
+.rc-pagination-item{
+    @apply font-medium;
+}
+
+.rc-pagination-item-active{
+    @apply border border-indigo-500 rounded bg-indigo-500 text-white;
+}

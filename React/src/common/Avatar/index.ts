@@ -1,0 +1,1 @@
+export {default as LetterAvatar} from "common/Avatar/components/LetterAvatar";
