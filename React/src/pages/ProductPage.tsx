@@ -104,9 +104,9 @@ const ProductPage = () => {
             {
                 isEmpty(product.data) ? (
                     <div className="p-5 flex flex-col justify-center space-y-5">
-                        <h1 className='text-center opacity-80'>No product found!</h1>
+                        <h1 className='text-center opacity-80'>Không tìm thấy sản phẩm phù hợp!</h1>
                         <Button onClick={() => navigate("/")} className="block w-fit mx-auto" intent="primary"
-                            variantType="intent">Back to Home</Button>
+                            variantType="intent">Quay lại trang chủ</Button>
                     </div>
                 ) : (
                     <div className="space-y-5">
