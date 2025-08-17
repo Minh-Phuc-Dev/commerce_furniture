@@ -77,7 +77,8 @@ class AuthenticationService {
             {
                 userId: user.getDataValue("id"),
                 email: user.getDataValue("email"),
-                otp: otpCode
+                otp: otpCode,
+                expiredAt: new Date(Date.now() + 15 * 60 * 1000)
             }
         );
 
