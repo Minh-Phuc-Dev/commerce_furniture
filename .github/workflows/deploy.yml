@@ -39,6 +39,7 @@ jobs:
           sudo systemctl restart node.furniture.service
   start-chroma:
     runs-on: self-hosted
+    needs: setup-workspace
     steps:
       - uses: actions/checkout@v4
       - name: Create Chroma directory and install dependencies
