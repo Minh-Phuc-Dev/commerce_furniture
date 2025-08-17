@@ -31,7 +31,13 @@ const ProductSchema = Joi.object(
         description: Joi.string().optional(),
         quantity: Joi.number().required().min(0),
         rating: Joi.number().optional().min(0).max(5).default(5),
-        attributes: Joi.object().unknown(true).optional().default(
+        attributes: Joi.object(
+            {
+                image: Joi.array().items(
+                    Joi.string()
+                ).optional().default([]),
+            }
+        ).optional().default(
             {}
         ),
         meta: Joi.object().optional().default(
