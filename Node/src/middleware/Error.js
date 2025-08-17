@@ -19,7 +19,7 @@ const errorHandle = (error, request, response, next) => {
     response.status(500).send(
         {
             message: "Internal Server Error",
-            error: error.message,
+            error: error
         }
     )
 }
