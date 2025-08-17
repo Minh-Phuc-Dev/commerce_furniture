@@ -17,7 +17,7 @@ class JoiValidator {
                 HTTP_CODE.BAD_REQUEST,
                 HTTP_CODE.BAD_REQUEST,
                 "Validation error.",
-                null,
+                error,
                 error.details,
                 error.stack
             )
