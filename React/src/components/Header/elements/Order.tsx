@@ -70,10 +70,25 @@ const Order = () => {
                                                             </div>
 
                                                             <div className="flex justify-between">
-                                                                <Badge className="text-px-10 text-white capitalize"
-                                                                    type="intent" intent="primary">
-                                                                    {item.status.toLowerCase()}
-                                                                </Badge>
+                                                                {
+                                                                    item.status === "COMPLETED" ? (
+                                                                        <Badge className="text-px-10 text-white capitalize"
+                                                                            type="intent" intent="primary">
+                                                                            Đã hoàn thành
+                                                                        </Badge>
+                                                                    ) : item.status === "CANCELED"  ? (
+                                                                        <Badge className="text-px-10 text-white capitalize"
+                                                                            type="intent" intent="error">
+                                                                            Đã hủy
+                                                                        </Badge>
+                                                                    ): (
+                                                                        <Badge className="text-px-10 text-white capitalize"
+                                                                            type="intent" intent="secondary">
+                                                                            Đang chờ
+                                                                        </Badge>
+                                                                    )
+                                                                }
+
                                                                 <span
                                                                     className="text-primary font-medium">{Number(item.totalAmount).toLocaleString('vi-VN')}₫</span>
                                                             </div>
