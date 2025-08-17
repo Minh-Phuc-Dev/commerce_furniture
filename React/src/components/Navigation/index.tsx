@@ -65,7 +65,7 @@ const Navigation = () => {
                 onClick={handleLogout}
                 className="px-5 rounded py-1 flex space-x-1 text-white font-medium bg-primary"
             >
-                Logout
+                Đăng xuất
             </button>
         </header>
     );

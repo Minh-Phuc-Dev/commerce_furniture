@@ -28,7 +28,7 @@ const CreateCategory:FC<CreateCategoryProps> = ({table}) => {
             <Modal.Content>
                 <div className="w-96 rounded bg-white">
                     <div className="px-5 py-2 border-b flex space-x-5 justify-between">
-                        <h2 className="font-medium">Create category</h2>
+                        <h2 className="font-medium">Tạo danh mục</h2>
                         <Modal.Trigger
                             mode="close"
                             className="text-gray-400 hover:text-red-500"
@@ -90,14 +90,14 @@ const CreateCategory:FC<CreateCategoryProps> = ({table}) => {
                         className="p-5 space-y-5"
                     >
                         <div className="space-y-2">
-                            <label>Name</label>
+                            <label>Tên</label>
                             <div className="space-y-1">
-                                <TextInput placeholder="Category name ..." controller={{name: "name"}}/>
+                                <TextInput placeholder="Tên danh mục ..." controller={{name: "name"}}/>
                                 <ErrorMessage name="name"/>
                             </div>
                         </div>
                         <div className="space-y-2">
-                            <label>Image</label>
+                            <label>Hình ảnh</label>
                             <div className="space-y-1">
                                 <FileInput  controller={{name: "attributes.image"}}/>
                                 <ErrorMessage name="attributes.image"/>
@@ -111,7 +111,7 @@ const CreateCategory:FC<CreateCategoryProps> = ({table}) => {
                             variantType="intent"
                             type="submit"
                         >
-                            Create
+                            Thêm danh mục
                         </Button>
                         <Modal.Trigger
                             mode="close"
@@ -121,7 +121,7 @@ const CreateCategory:FC<CreateCategoryProps> = ({table}) => {
                                 variantType="intent"
                                 type="submit"
                             >
-                                Close
+                                Đóng
                             </Button>
                         </Modal.Trigger>
                     </div>

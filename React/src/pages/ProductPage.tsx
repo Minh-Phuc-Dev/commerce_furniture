@@ -332,7 +332,7 @@ const ProductPage = () => {
                                         className="block w-fit px-5 py-1 text-center text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition"
                                         onClick={addToCart}
                                     >
-                                        Add to Cart
+                                        Thêm vào giỏ hàng
                                     </button>
                                 </div>
                             </div>

@@ -54,7 +54,7 @@ const CreateProduct: FC<CreateProductProps> = ({table}) => {
             <Modal.Content className="overflow-hidden">
                 <div className="flex flex-col w-full h-full max-w-screen-lg rounded bg-white">
                     <div className="px-5 py-2 border-b flex space-x-5 justify-between">
-                        <h2 className="font-medium">Create product</h2>
+                        <h2 className="font-medium">Tạo sản phẩm</h2>
                         <Modal.Trigger
                             mode="close"
                             className="text-gray-400 hover:text-red-500"
@@ -263,7 +263,7 @@ const CreateProduct: FC<CreateProductProps> = ({table}) => {
                             variantType="intent"
                             type="submit"
                         >
-                            Create
+                            Thêm sản phẩm
                         </Button>
                         <Modal.Trigger
                             mode="close"
@@ -273,7 +273,7 @@ const CreateProduct: FC<CreateProductProps> = ({table}) => {
                                 variantType="intent"
                                 type="submit"
                             >
-                                Close
+                                Đóng
                             </Button>
                         </Modal.Trigger>
                     </div>

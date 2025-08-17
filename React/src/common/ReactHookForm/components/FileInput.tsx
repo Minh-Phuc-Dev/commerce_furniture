@@ -163,7 +163,7 @@ const FileInput: FC<FileInputProps> = ({className, controller, uploadOnChange = 
                                 fill="black"
                             />
                         </svg>
-                        <span>Drop or select file</span>
+                        <span>Kéo và thả tệp </span>
                     </div>
                 ) : isArray(field.value) ? (
                     <div className="grid grid-cols-2 gap-2">
