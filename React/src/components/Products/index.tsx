@@ -1,7 +1,7 @@
 
 import Button from 'common/Button';
 import Item from 'components/Item';
-import { SortBy } from 'components/Products/elements/ProductFilter';
+import { ProductFilterMobile, SortBy } from 'components/Products/elements/ProductFilter';
 import useCallAPIState, { CALL_API_STATUS } from 'hooks/UseCallAPIState';
 import { isEmpty } from 'lodash';
 import { FC, HTMLAttributes, useCallback, useEffect } from 'react';
@@ -19,6 +19,7 @@ const Products: FC<HTMLAttributes<HTMLDivElement>> = (props) => {
             data: []
         }
     )
+
 
     const fetchData = useCallback(
         async () => {
@@ -43,7 +44,11 @@ const Products: FC<HTMLAttributes<HTMLDivElement>> = (props) => {
         <div
             {...props}
         >
-            <SortBy className='ml-auto mb-5 w-fit' />
+            <div className='flex gap-x-2 items-center justify-between md:justify-end mb-5'>
+                <ProductFilterMobile />
+                <SortBy className='w-fit'/>
+            </div>
+
 
             {
                 isEmpty(products.data) ? (

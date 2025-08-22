@@ -17,8 +17,10 @@ const SearchPage = () => {
                     ]
                 }
             />
-            <div className="flex gap-x-5 pb-10">
-                <ProductFilter className="flex-none rounded" />
+            <div className="flex gap-x-5 pb-10 relative">
+                <div className="flex-none hidden md:block">
+                    <ProductFilter className="rounded" />
+                </div>
                 <Products className="grow" />
             </div>
         </div>

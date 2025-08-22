@@ -27,8 +27,8 @@ const Item: FC<ItemProps> = ({item}) => {
                 triggerToast(
                     {
                         type: TRIGGER_TOAST_TYPE.INFO,
-                        header: "Info",
-                        body: "Use are not logged in. Please login first!"
+                        header: "Cảnh báo",
+                        body: "Bạn cần đăng nhập để mua hàng!"
                     }
                 )
                 return
@@ -44,8 +44,8 @@ const Item: FC<ItemProps> = ({item}) => {
             triggerToast(
                 {
                     type: success ? TRIGGER_TOAST_TYPE.SUCCESS : TRIGGER_TOAST_TYPE.ERROR,
-                    header: success ? "Success" : "Error",
-                    body: success ? "Product added to cart" : "Failed to add product to cart"
+                    header: success ? "Thành công" : "Thất bại",
+                    body: success ? "Đã thêm sản phẩm vào giỏ hàng" : "Thêm vào giỏ hàng thất bại"
                 }
             )
 
