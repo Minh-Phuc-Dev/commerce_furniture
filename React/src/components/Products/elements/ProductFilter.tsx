@@ -346,7 +346,7 @@ export const ProductFilterMobile: FC<HTMLAttributes<HTMLDivElement>> = ({
       {/* Header + nút đóng */}
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-lg font-semibold">
-          Bộ lọc</h2>
+          Bộ Lọc</h2>
         <button
           className="size-8 flex items-center justify-center rounded-full hover:bg-gray-200 transition"
           onClick={setIsOpen.off}
