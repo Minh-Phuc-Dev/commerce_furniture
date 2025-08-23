@@ -71,7 +71,7 @@ const Header = () => {
       <div className="flex space-x-4">
         <Order />
         <Cart />
-        <Link className="hover:text-primary" to="/profile">
+        <Link className="hover:text-primary hidden sm:block" to="/profile">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
