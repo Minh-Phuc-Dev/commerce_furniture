@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <div className="max-w-1200 w-full mx-auto py-2 flex items-center xl:px-0 px-5">
-      <Link to="/">
+      <Link className="flex-none" to="/">
         <img className="h-12" src="/images/logo.png" alt="logo" />
       </Link>
       <div className="grow px-5">
