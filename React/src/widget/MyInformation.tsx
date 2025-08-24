@@ -139,7 +139,7 @@ const MyInformation = () => {
                             </div>
 
                             <div className="space-y-2 col-span-2">
-                                <label className="text-gray-600 block">Đại chỉ giao hàng</label>
+                                <label className="text-gray-600 block">Địa chỉ giao hàng</label>
                                 <div className="space-y-1">
 
                                     <TextInput controller={{ name: "address" }} />

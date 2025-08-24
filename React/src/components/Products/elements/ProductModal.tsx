@@ -112,8 +112,8 @@ const ProductModal: FC<RowModel<Product>> = ({row, table, index}) => {
                                     triggerToast(
                                         {
                                             type: TRIGGER_TOAST_TYPE.ERROR,
-                                            header: "Failed",
-                                            body: "Something went wrong"
+                                            header: "Thất bại",
+                                            body: "Cập nhật sản phẩm thất bại"
                                         }
                                     )
                                     return
@@ -122,8 +122,8 @@ const ProductModal: FC<RowModel<Product>> = ({row, table, index}) => {
                                 triggerToast(
                                     {
                                         type: TRIGGER_TOAST_TYPE.SUCCESS,
-                                        header: "Success",
-                                        body: "Product update successfully"
+                                        header: "Thành công",
+                                        body: "Cập nhật sản phẩm thành công"
                                     }
                                 )
                                 setOpen(false)
@@ -253,7 +253,7 @@ const ProductModal: FC<RowModel<Product>> = ({row, table, index}) => {
                             variantType="intent"
                             type="submit"
                         >
-                            Update
+                            Cập Nhật
                         </Button>
                         <Modal.Trigger
                             mode="close"
@@ -263,7 +263,7 @@ const ProductModal: FC<RowModel<Product>> = ({row, table, index}) => {
                                 variantType="intent"
                                 type="submit"
                             >
-                                Close
+                                Đóng
                             </Button>
                         </Modal.Trigger>
                     </div>

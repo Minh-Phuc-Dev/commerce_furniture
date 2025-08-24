@@ -149,6 +149,7 @@ const OrderBar = () => {
                         <Line
                             type="natural"
                             dataKey="total"
+                            name="Tổng đơn hàng"
                             stroke="#2e5981"
                             dot={false}
                             strokeWidth={2}
@@ -157,6 +158,7 @@ const OrderBar = () => {
                         <Bar
                             dataKey="processing"
                             fill="#7928ca"
+                            name="Đang xử lý"
                             barSize={28}
                             shape={<RoundedTopBarFill/>}
                         />
@@ -164,6 +166,7 @@ const OrderBar = () => {
                         <Bar
                             type="natural"
                             dataKey="pending"
+                            name="Chờ duyệt"
                             fill="#077a88"
                             barSize={28}
                             shape={<RoundedTopBarFill/>}
@@ -171,6 +174,7 @@ const OrderBar = () => {
                         <Bar
                             type="natural"
                             dataKey="cancelled"
+                            name="Đã hủy"
                             fill="#ee0000"
                             barSize={28}
                             shape={<RoundedTopBarFill/>}
